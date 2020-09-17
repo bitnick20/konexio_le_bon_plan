@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Announcement = require('./announcement.models');
 
-const PictureSchema = new mongooose.Schema ({
+const PictureSchema = new mongoose.Schema ({
     announcement_id: {
         type : mongoose.Schema.Types.ObjectId,
         ref : "Announcement",

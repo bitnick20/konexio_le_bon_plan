@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const CitySchema = new mongooose.Schema ({
+const CitySchema = new mongoose.Schema ({
     name: String,
     postCode: String,
     created: {

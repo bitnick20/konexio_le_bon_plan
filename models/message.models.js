@@ -3,7 +3,7 @@ const User = require('./user.models');
 const Announcement = require('./announcement.models');
 
 
-const MessageSchema = new mongooose.Schema ({
+const MessageSchema = new mongoose.Schema ({
     recipient_user_id: {
         type : mongoose.Schema.Types.ObjectId,
         ref : "User",

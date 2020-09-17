@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const City = require('./city.models');
 const User = require('./user.models');
 
-const AnnouncementSchema = new mongooose.Schema ({
+const AnnouncementSchema = new mongoose.Schema ({
     user_id: {
         type : mongoose.Schema.Types.ObjectId,
         ref : "User",
@@ -14,7 +14,9 @@ const AnnouncementSchema = new mongooose.Schema ({
         required : true
     },   
     title: String,
+    description: String,
     price: String,
+
     created: {
         type: Date,
         default: Date.now
